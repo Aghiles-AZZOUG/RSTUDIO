@@ -1,0 +1,15 @@
+Bonjour,
+
+A la fin du dernier cours, j'ai glissé une erreur du calcul de la valeur critique :
+Le test principal étant 
+H0 mu1 >= mu2 contre H1: mu1 < mu2.
+
+
+Puisqu'il s'agit d'un test unilatéral, la valeur critique ne doit pas être celle donnée par
+
+ qt(0.05/2,191); -qt(1-0.05/2, 191)  #  -1.972462
+
+Mais 
+    qt(0.05,191); -qt(1-0.05, 191)  #   -1.652871  
+
+La conclusion reste la même. 
